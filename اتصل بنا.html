@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع الجولف</title>
+    <link rel="stylesheet" href="التنسيق.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.ytimg.com/vi/uVlZaQlrQto/maxresdefault.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .contact-section {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+            width: 100%;
+            margin: auto;
+        }
+
+        .contact-section h2 {
+            margin-top: 0;
+            color: #ffd700;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            background-color: #f8f8f8;
+        }
+
+        .contact-form button {
+            background-color: #ffd700;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .contact-form button:hover {
+            background-color: #ffa500;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">موقع الجولف</div>
+        <ul>
+            <li><a href="الصفحه الرئيسيه.html">الصفحه الرئيسيه</a></li>
+            <li><a href="عن الشركه.html">عن الشركة</a></li>
+            <li><a href="اتصل بنا.html">اتصل بنا</a></li>
+            <li><a href="العروض.html">العروض</a></li>
+            <li><a href="المتجر.html">المتجر</a></li>
+            <li><a href="فندق.html">فندق</a></li>
+            <li class="search-container">
+                <input type="text" id="searchTerm" placeholder="ادخل عبارة للبحث...">
+                <button onclick="performSearch()">ابحث</button>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="text">
+            <h1>مرحبًا بكم في موقع الجولف</h1>
+        </div>
+        <div class="image">
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <h2>تواصل معنا</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="الاسم الكامل">
+            <input type="email" name="email" placeholder="البريد الإلكتروني">
+            <textarea name="message" placeholder="رسالتك" rows="5"></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+
+    <script>
+        function toggleGallery() {
+            var gallery = document.getElementById('gallery');
+            if (gallery.style.display === 'none' || gallery.style.display === '') {
+                gallery.style.display = 'flex';
+            } else {
+                gallery.style.display = 'none';
+            }
+        }
+
+        function showImage(imageSrc) {
+            var overlay = document.getElementById('overlay');
+            var overlayImage = document.getElementById('overlayImage');
+            overlayImage.src = imageSrc;
+            overlay.style.display = 'flex';
+        }
+
+        function hideImage() {
+            var overlay = document.getElementById('overlay');
+            overlay.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

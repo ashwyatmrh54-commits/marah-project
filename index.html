@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع الجولف</title>
+    <link rel="stylesheet" href="التنسيق.css">
+    <style>
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="" alt="شعاري" class="logo-img">
+            <div class="logo">موقع الجولف هول ان ون</div>
+        </div>
+        <ul>
+            <li><a href="الصفحه الرئيسيه.html">الصفحه الرئيسيه</a></li>
+            <li><a href="عن الشركه.html">عن الشركة</a></li>
+            <li><a href="اتصل بنا.html">اتصل بنا</a></li>
+            <li><a href="العروض.html">العروض</a></li>
+            <li><a href="المتجر.html">المتجر</a></li>
+            <li class="search-container">
+                <input type="text" id="searchTerm" placeholder="ادخل عبارة للبحث...">
+                <button onclick="performSearch()">ابحث</button>
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>مرحبًا بك في موقع الجولف هول ان ون </h1>
+        <p> </p>
+    </div>
+    <footer>
+        <main></main>
+    </footer>
+    <script>
+        function performSearch() {
+            var searchTerm = document.getElementById('searchTerm').value;
+            // تنفيذ البحث هنا
+            console.log("بحث عن: " + searchTerm);
+        }
+    </script>
+</body>
+</html>
+
+<title>موقع الجولف</title>
+    <link rel="stylesheet" href="التنسيق.css">
+    <style>
+    </style>
+</head>
+<body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .show-gallery-btn {
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            display: none;
+        }
+
+        .gallery-column img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .overlay img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+    </style>
+</head>
+<body>
+    <button class="show-gallery-btn" onclick="toggleGallery()">  صور لي 3 ملاعب جولف</button>
+    <div class="gallery" id="gallery">
+        <div class="gallery-column">
+            <img src="mm.jpg" alt="ملعب جولف 1" onclick="showImage('golf1.jpg')">
+            <img src="m.jpg" alt="ملعب جولف 2" onclick="showImage('golf2.jpg')">
+            <img src="OIP.jpg" alt="ملعب جولف 2" onclick="showImage('golf2.jpg')">
+
+        </div>
+        <div class="gallery-column">
+            <img src="R.jpg" alt="ملعب جولف 3" onclick="showImage('golf3.jpg')">
+            <img src="R (1).jpg" alt="ملعب جولف 3" onclick="showImage('golf3.jpg')">
+            <img src="hh.png" alt="ملعب جولف 3" onclick="showImage('golf3.jpg')">
+
+        </div>
+    </div>
+    <div class="overlay" id="overlay" onclick="hideImage()">
+        <img id="" src="" alt="صورة مكبرة">
+    </div>
+
+    <script>
+        function toggleGallery() {
+            var gallery = document.getElementById('gallery');
+            if (gallery.style.display === 'none' || gallery.style.display === '') {
+                gallery.style.display = 'flex';
+            } else {
+                gallery.style.display = 'none';
+            }
+        }
+
+        function showImage(imageSrc) {
+            var overlay = document.getElementById('overlay');
+            var overlayImage = document.getElementById('overlayImage');
+            overlayImage.src = imageSrc;
+            overlay.style.display = 'flex';
+        }
+
+        function hideImage() {
+            var overlay = document.getElementById('overlay');
+            overlay.style.display = 'none';
+        }
+        
+    </script>
+</body>
+</html>

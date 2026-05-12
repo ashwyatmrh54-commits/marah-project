@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع الجولف</title>
+    <link rel="stylesheet" href="التنسيق.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #012209;
+            padding: 10px 20px;
+        }
+        .navbar .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul li {
+            margin-left: 20px;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+        .navbar ul li a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+        .search-container input {
+            padding: 5px;
+            margin-right: 5px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .text {
+            flex: 1;
+            margin-right: 50px;
+        }
+        .image {
+            flex: 1;
+        }
+        .image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('11989_samselection_hero_403403.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(255, 245, 245);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">موقع الجولف</div>
+        <ul>
+            <li><a href="الصفحه الرئيسيه.html">الصفحه الرئيسيه</a></li>
+            <li><a href="عن الشركه.html">عن الشركة</a></li>
+            <li><a href="اتصل بنا.html">اتصل بنا</a></li>
+            <li><a href="العروض.html">العروض</a></li>
+            <li><a href="المتجر.html">المتجر</a></li>
+            <li><a href="فندق.html">فندق</a></li>
+            <li class="search-container">
+                <input type="text" id="searchTerm" placeholder="ادخل عبارة للبحث...">
+                <button onclick="performSearch()">ابحث</button>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="text">
+         <h1> وتأسست شركة الجولف على مبادئ التميز والجودة، حيث نسعى دائمًا لتقديم أفضل الخدمات والمنتجات لعملائنا الكرام. من خلال الالتزام بالابتكار والتحسين المستمر، قمنا ببناء سمعة راسخة كشركة رائدة في مجالنا.</h1>  
+        </div>
+        <div class="image">
+        </div>
+    </div>
+</body>
+</html>
